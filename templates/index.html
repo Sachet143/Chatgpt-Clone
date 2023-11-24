@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="shortcut icon" href="https://chat.openai.com/favicon.ico" type="image/x-icon">
+    <title>Question Mark</title>
+</head>
+<body class="bg-chatblack-50">
+    <div class="flex text-white">
+        <div class="left bg-[#202123] w-2/12 h-[100vh] p-1">
+            <button class="w-full py-2 border-white border rounded-sm flex justify-center items-center">
+                <div class="-ml-5"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg></div>
+                <p>New Chat</p>
+            </button>
+        </div>
+        <div class="right w-10/12 h-[100vh] flex flex-col justify-center items-center relative">
+            <div class="text-center w-full text-4xl font-bold">
+                Question Mark
+            </div>
+            <div class="logo">
+                <img class="w-24 opacity-60" src="../static/assets/logo.png" alt="logo" />
+            </div>
+            <div class="itemsrow flex mt-6 py-4 w-[53vw] justify-around items-start">
+                <div class="examples flex flex-col justify-center items-center">
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16"> <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" fill="white"></path> 
+                    </svg>
+                    <div>Examples</div>
+                    <button class="bg-gray-500 rounded-md my-2 mx-4 px-6 py-2 hover:bg-gray-600 w-[16vw]">"Explain quantum computing in simple terms"</button>
+                    <button class="bg-gray-500 rounded-md my-2 mx-4 px-6 py-2 hover:bg-gray-600 w-[16vw]">"Get any creative ideas for a 10 year old's birthday?"</button>
+                    <button class="bg-gray-500 rounded-md my-2 mx-4 px-6 py-2 hover:bg-gray-600 w-[16vw]">"How do I make an HTTP request in Javascript?"</button>
+                      
+                </div>
+                <div class="cap flex flex-col justify-center items-center">
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><title>ionicons-v5-m</title><path d="M315.27,33,96,304H224L192.49,477.23a2.36,2.36,0,0,0,2.33,2.77h0a2.36,2.36,0,0,0,1.89-.95L416,208H288L319.66,34.75A2.45,2.45,0,0,0,317.22,32h0A2.42,2.42,0,0,0,315.27,33Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" fill="white"></path></svg>
+                    </svg>
+                    <div>Capabilities</div>
+                    <button class="bg-gray-500 rounded-md my-2 mx-4 px-6 py-2 hover:bg-gray-600 w-[16vw]">"Remember what user said earlier in the conversation"</button>
+                    <button class="bg-gray-500 rounded-md my-2 mx-4 px-6 py-2 hover:bg-gray-600 w-[16vw]">"Allows user to provide follow-op connections"</button>
+                    <button class="bg-gray-500 rounded-md my-2 mx-4 px-6 py-2 hover:bg-gray-600 w-[16vw]">"Trained to decline inappropriate requests"</button>
+                      
+                </div>
+                <div class="lim flex flex-col justify-center items-center">
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><title>ionicons-v5-r</title><path d="M85.57,446.25H426.43a32,32,0,0,0,28.17-47.17L284.18,82.58c-12.09-22.44-44.27-22.44-56.36,0L57.4,399.08A32,32,0,0,0,85.57,446.25Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" fill="white"></path><path d="M250.26,195.39l5.74,122,5.73-121.95a5.74,5.74,0,0,0-5.79-6h0A5.74,5.74,0,0,0,250.26,195.39Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" fill="white"></path><path d="M256,397.25a20,20,0,1,1,20-20A20,20,0,0,1,256,397.25Z" fill="white"></path></svg>
+                    <div>Limitations</div>
+                    <button class="bg-gray-500 rounded-md my-2 mx-4 px-6 py-2 hover:bg-gray-600 w-[16vw]">"May ocassionally generate incorrect information"</button>
+                    <button class="bg-gray-500 rounded-md my-2 mx-4 px-6 py-2 hover:bg-gray-600 w-[16vw]">"May ocassionally produce harmful instructions or biased content"</button>
+                    <button class="bg-gray-500 rounded-md my-2 mx-4 px-6 py-2 hover:bg-gray-600 w-[16vw]">"Limited knowledge of world nad events after 2021"</button>
+                      
+                </div>
+            </div>
+
+            <div class="input w-[60vw] absolute bottom-4">
+                <input class="w-full p-4 bg-gray-600 rounded-md" placeholder="Ask Questions..." type="text" name="text" id="">
+                <div class="send absolute right-3 bottom-10 bg-gray-700 p-1 rounded-md opacity-60">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-white dark:text-black"><path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </div>
+                <p class="text-center opacity-80 text-sm py-1">Question Mark can make mistakes. Consider checking important information.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
