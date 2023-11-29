@@ -19,5 +19,5 @@ sendButton.addEventListener('click', async () => {
 
     let result = await postData("/api", {"question": questionInput})
     console.log(result.result)
-    solution.innerHTML = result.result;
+    solution.innerHTML = result.answer;
 })

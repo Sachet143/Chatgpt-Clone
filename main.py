@@ -4,9 +4,9 @@ from flask import Flask, render_template, jsonify, request
 from flask_pymongo import PyMongo
 from dotenv import load_dotenv, dotenv_values
 
-import bardapi
+import openai
 
-bard = bardapi.Bard()
+openai.api_key = "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"
 
 load_dotenv()
 
@@ -35,10 +35,18 @@ def qa():
             data = {"result": f"{chat['answer']}"}
             return jsonify(data)
         else:
-            prompt = question
-            mongo.db.chats.insert_one({"question": question, "answer": bard.generate(question)})
-            data = {"question": question, "answer": bard.generate(question)}
-            time.sleep(2)
+            response = openai.Completion.create(
+                model="text-davinci-003",
+                prompt=question,
+                temperature=0.7,
+                max_tokens=256,
+                top_p=1,
+                frequency_penalty=0,
+                presence_penalty=0
+            )
+            print(response)
+            data = {"question": question, "answer": response.choices[0].text}
+            mongo.db.chats.insert_one({"question": question, "answer": response.choices[0].text})
             return jsonify(data)
     data = {"result": "Thank you I am just a machine"}
 
